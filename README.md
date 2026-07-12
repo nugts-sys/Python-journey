@@ -10,5 +10,7 @@ About me
 🚀 Building projects and learning step by step
 📚 Always trying to learn something new
 
+I upload all my micro projects that i use to practice on here in my repos
+
 
 Thanks for visiting my profile!
