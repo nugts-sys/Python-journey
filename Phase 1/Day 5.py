@@ -55,3 +55,4 @@ while True:
     
 #now each interaction from the beginning that i first only used if and else for has a own function
 #i had problems with integrating a sort of error that doesnt let users put in grades outside of the range between 1-6
+#managed to do it enyways using claude to help me now it asks to put a new grade in over and over again until one in the right range is entered
