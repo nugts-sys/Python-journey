@@ -29,3 +29,5 @@ student_1 = Students("Mustapha", 5, "maths")
 student_2 = Students("Jenny", 1, "maths")
 
 print(student_2.subjct())
+
+#this actually was very hard i somehow didnt understand (self) which made it hard to target the right thing i wanted but managed to do it gotta work on this more though
