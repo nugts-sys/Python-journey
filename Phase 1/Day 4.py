@@ -16,10 +16,19 @@ while True:
 
     if user_input in interactions:
         if user_input == 1:
-            added_grade = int(input("which grade from 1-6 do you want to add?: "))
-            grades.append(added_grade)
-            print(f"{grades} ...these are all the grades including the one you added")
 
+        
+                 
+            try:
+                added_grade = int(input("which grade from 1-6 do you want to add?: "))
+                while added_grade < 1 or added_grade > 6:
+                    print("grades can only be numbers between 1 and 6")
+                    added_grade = int(input("which grade from 1-6 do you want to add?: "))
+                grades.append(added_grade)
+                print(f"{grades} ...these are all the grades including the one you added")
+            except ValueError:
+                print("grades can only be numbers between 1 and 6")
+            
 
         elif user_input == 3:
             print(grades)
