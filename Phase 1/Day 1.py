@@ -15,5 +15,3 @@ for x in range(1, 51):                  #range of the whole interval that i wann
         
         else:                           #print prime when stopped at one
             print(x)                    
-
-
