@@ -21,6 +21,22 @@ Interactions = {1:"add expense",
 print(Interactions)
 
 
+
+def get_valid_amount():
+   
+    try:
+        amount = int(input("you can add the amount of your choice: "))
+    except ValueError:
+        amount = -1
+
+    while amount <= 0:
+        try:
+            amount = int(input("you can add the amount of your choice: "))
+        except ValueError:
+            amount = -1
+
+    return amount
+
 while True:
 
     interaction = int(input("which action do you want to do?: "))
@@ -28,7 +44,7 @@ while True:
     if interaction in Interactions:
         if interaction == 1:
             item = input("enter the item you want to add: ")
-            amount = int(input("how much will this item cost?: "))
+            amount = get_valid_amount()
             expenses = add_expense(expenses, item, amount)
 
             for x in expenses:
