@@ -1,4 +1,4 @@
-
+#just another prac sesseion nothing new
 
 numbers = [1, 3, 5, 2, 54, 68, 1235, 546, 3 ,6 , 7, 7, 234, 12, 6]
 
