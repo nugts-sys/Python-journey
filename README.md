@@ -12,5 +12,7 @@ About me
 
 I upload all my micro projects that i use to practice on here in my repos
 
+this bio is completely not ai generated 
+
 
 Thanks for visiting my profile!
