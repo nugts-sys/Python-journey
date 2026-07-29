@@ -1,5 +1,5 @@
 
-def get_valit_amount():
+def get_valid_amount():
    
     try:
         amount = int(input("you can add the amount of your choice: "))
@@ -14,5 +14,5 @@ def get_valit_amount():
 
     return amount
 
-result = get_valit_amount()
+result = get_valid_amount()
 print(f"you entered: {result}")
