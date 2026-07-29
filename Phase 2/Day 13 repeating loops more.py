@@ -1,4 +1,4 @@
-#another repetition
+#another repetition of loops
 
 numbers = [1, 3, 5, 6, 8, 1, 3, 2, 5, 9, 0, 6, 5, 5, 7, 6, 4, 2, 8]
 

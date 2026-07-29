@@ -1,4 +1,4 @@
-#Day 5. working on the grade manager of day 4 and upgrading it using functions
+#Day 5. working on the grade manager of day 4 and upgrading it using functions to make code recallable
 
 
 grades = [1, 4, 3, 5, 2, 3, 3, 2, 4, 5, 5]
