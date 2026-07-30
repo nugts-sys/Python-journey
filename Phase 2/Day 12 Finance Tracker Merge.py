@@ -40,7 +40,9 @@ expenses = load_expenses()
 
 
 Interactions = {1:"add expense",
-                2:"exit"}
+                2:"show total spent",
+                3:"show all expenses",
+                4:"exit"}
 
 print(Interactions)
 
@@ -75,8 +77,19 @@ while True:
                 print(x)
             print(f"you just added {item} and it will cost {amount}$")
 
-    
         elif interaction == 2:
+            total = 0
+            for sum_up in expenses:
+                total += sum_up.amount
+            print(f"your total spent is: {total}$")
+            
+        elif interaction == 3:
+            for all_expenses in expenses:
+                print(all_expenses)
+
+
+
+        elif interaction == 4:
             save_expenses(expenses)
             break
 
