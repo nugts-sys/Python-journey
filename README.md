@@ -28,6 +28,6 @@ Check my progress in [Python-journey](https://github.com/nugts-sys/Python-journe
 
 ## Reach me
 
-📬 [deine-neue-anonyme-email@gmail.com](mailto:deine-neue-anonyme-email@gmail.com)
+📬 [beanbyte@gmx.net](mailto:beanbyte@gmx.net)
 
 Not here for perfect code — here to actually learn and ship things.
