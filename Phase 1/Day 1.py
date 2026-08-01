@@ -1,4 +1,4 @@
-#Numbers from 1-100 using for loops
+#Numbers from 1-100 using for- loop
 
 #credit_card = "1234-5678-9012-345-678"
 

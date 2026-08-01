@@ -1,0 +1,115 @@
+the following is a list of all basic commands i used to start off understanding Git:
+
+git --version
+Zeigt an, welche Version von Git auf deinem Computer installiert ist. Ganz allein steht dieser Befehl, keine Teile drin.
+
+git config --global user.name und git config --global user.email
+
+git config – ruft Git-Einstellungen auf oder zeigt sie an
+--global – bedeutet, diese Einstellung gilt für alle deine Git-Projekte auf diesem Computer, nicht nur für eins
+user.name bzw. user.email – welche konkrete Einstellung du dir anzeigen lässt
+Zusammen: zeigt dir deinen hinterlegten Namen bzw. deine E-Mail-Adresse, die Git bei jedem Commit als Autor einträgt.
+
+mkdir git-practice
+
+mkdir – "make directory", erstellt einen neuen Ordner
+git-practice – der Name, den der neue Ordner bekommt
+Zusammen: erstellt einen neuen, leeren Ordner mit diesem Namen.
+
+cd git-practice
+
+cd – "change directory", wechselt dich in einen anderen Ordner
+git-practice – der Ordner, in den du wechselst
+Zusammen: du befindest dich danach innerhalb dieses Ordners, alle weiteren Befehle wirken jetzt dort.
+
+git init
+
+git init – "initialize", macht aus einem normalen Ordner ein Git-Repository
+Zusammen: erstellt den versteckten .git-Unterordner, ab dem Git anfängt, Änderungen in diesem Ordner zu verfolgen.
+
+echo "Hello Git" > test.txt
+
+echo "Hello Git" – gibt den Text "Hello Git" aus
+> – leitet diese Ausgabe nicht ins Terminal, sondern in eine Datei um, und überschreibt dabei den kompletten bisherigen Inhalt dieser Datei
+test.txt – der Name der Datei, in die geschrieben wird
+Zusammen: erstellt (oder überschreibt) eine Datei namens test.txt mit dem Inhalt "Hello Git".
+
+git status
+
+git status – zeigt den aktuellen Zustand deines Projekts
+Zusammen: zeigt dir, welche Dateien neu, verändert, oder schon vorbereitet zum Speichern sind.
+
+git add test.txt
+
+git add – bereitet Dateien für den nächsten Commit vor ("staged" sie)
+test.txt – welche Datei genau vorbereitet werden soll
+Zusammen: sagt Git "diese Datei soll beim nächsten Commit mit gespeichert werden".
+
+git commit -m "Add test file"
+
+git commit – erstellt einen dauerhaften Speicherpunkt (Commit) aus allem, was mit git add vorbereitet wurde
+-m – "message", kündigt an, dass direkt danach eine Beschreibung folgt
+"Add test file" – die eigentliche Beschreibung, was in diesem Commit passiert ist
+Zusammen: speichert den aktuellen, vorbereiteten Zustand dauerhaft in der Historie, mit dieser Nachricht als Erklärung.
+
+git log
+
+git log – zeigt die komplette Liste aller bisherigen Commits
+Zusammen: zeigt dir die Historie deines Projekts, neuester Commit zuerst.
+
+echo "This is a second line" >> test.txt
+
+Gleich wie oben, aber mit >> statt >
+>> – hängt den Text ans Ende der bestehenden Datei an, statt sie zu überschreiben
+Zusammen: fügt eine neue Zeile zur bestehenden test.txt hinzu, ohne den alten Inhalt zu löschen.
+
+git diff
+
+git diff – zeigt genau, welche Zeilen sich in einer Datei verändert haben, seit dem letzten Commit
+Zusammen: zeigt dir einen Vorher/Nachher-Vergleich, mit Plus für neue und Minus für gelöschte Zeilen.
+
+cat test.txt
+
+cat – zeigt den kompletten Inhalt einer Datei direkt im Terminal an
+test.txt – welche Datei angezeigt werden soll
+Zusammen: zeigt dir, was gerade tatsächlich in der Datei steht.
+
+git show 782b22a:test.txt
+
+git show – zeigt dir den Inhalt zu einem bestimmten Zeitpunkt in der Historie
+782b22a – die Kennung des Commits, den du dir anschauen willst
+:test.txt – welche Datei aus diesem Commit genau angezeigt werden soll
+Zusammen: zeigt dir, wie test.txt zu genau dem Zeitpunkt aussah, ohne deine aktuelle Datei zu verändern.
+
+More commands i learned:
+
+git checkout main
+
+git checkout – wechselt zu einem anderen Branch
+main – der Branch, zu dem du wechselst
+Zusammen: bringt dich zurück auf den main-Branch, alle Dateien werden auf den Stand von main zurückgesetzt.
+
+git merge feature-test
+
+git merge – führt die Änderungen eines anderen Branches in den Branch ein, auf dem du gerade stehst
+feature-test – der Branch, dessen Änderungen eingefügt werden sollen
+Zusammen: Weil du zu diesem Zeitpunkt auf main warst, hat dieser Befehl gesagt "hol dir alles, was auf feature-test passiert ist, und füg es hier in main ein". Weil sich main in der Zwischenzeit nicht verändert hatte, konnte Git das als einfaches "Fast-forward" erledigen – main wurde einfach auf den gleichen Stand wie feature-test vorgespult, ohne dass echt zwei unterschiedliche Versionen vermischt werden mussten.
+
+cat test.txt (nochmal benutzt)
+
+git checkout main
+
+git checkout – wechselt zu einem anderen Branch
+main – der Branch, zu dem du wechselst
+Zusammen: bringt dich zurück auf den main-Branch, alle Dateien werden auf den Stand von main zurückgesetzt.
+
+git merge feature-test
+
+git merge – führt die Änderungen eines anderen Branches in den Branch ein, auf dem du gerade stehst
+feature-test – der Branch, dessen Änderungen eingefügt werden sollen
+Zusammen: Weil du zu diesem Zeitpunkt auf main warst, hat dieser Befehl gesagt "hol dir alles, was auf feature-test passiert ist, und füg es hier in main ein". Weil sich main in der Zwischenzeit nicht verändert hatte, konnte Git das als einfaches "Fast-forward" erledigen – main wurde einfach auf den gleichen Stand wie feature-test vorgespult, ohne dass echt zwei unterschiedliche Versionen vermischt werden mussten.
+
+cat test.txt (nochmal benutzt)
+
+Gleich wie vorhin – zeigt den Inhalt der Datei an
+Zusammen: bestätigt, dass main jetzt auch die dritte Zeile enthält, die vorher nur auf feature-test existierte.
