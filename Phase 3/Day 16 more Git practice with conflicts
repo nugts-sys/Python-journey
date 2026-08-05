@@ -1,0 +1,48 @@
+Klar, hier die Liste der heutigen Befehle:
+
+cd ~/git-practice
+
+cd – "change directory", wechselt in einen anderen Ordner
+~/git-practice – der Pfad zum Ordner (das ~ steht für dein Home-Verzeichnis)
+Zusammen: bringt dich zurück in deinen Übungsordner.
+
+git branch
+
+git branch – zeigt alle vorhandenen Branches an, mit einem Stern beim aktuellen
+Zusammen: checkt, wo du gerade stehst und welche Branches existieren.
+
+nano test.txt
+
+nano – öffnet einen einfachen Text-Editor direkt im Terminal
+test.txt – die Datei, die geöffnet wird
+Zusammen: lässt dich eine Datei direkt im Terminal bearbeiten, ohne VS Code.
+
+git checkout main / git checkout feature-test
+
+git checkout – wechselt zu einem anderen Branch
+main bzw. feature-test – der Ziel-Branch
+Zusammen: wechselt deinen aktuellen Arbeitsstand auf den angegebenen Branch.
+
+git merge feature-test
+
+git merge – führt einen anderen Branch in den aktuellen ein
+feature-test – welcher Branch eingefügt werden soll
+Zusammen: versucht, die Änderungen von feature-test in den Branch zu übernehmen, auf dem du gerade stehst (hier: main). Wenn beide Branches dieselbe Stelle unterschiedlich verändert haben, entsteht ein Konflikt statt eines automatischen Zusammenführens.
+
+Nach einem Konflikt: die Konflikt-Marker in der Datei
+
+<<<<<<< HEAD – markiert den Start deiner eigenen, aktuellen Version
+======= – Trennlinie zwischen den zwei widersprüchlichen Versionen
+>>>>>>> feature-test – markiert das Ende der Version aus dem anderen Branch
+Diese Marker schreibt Git automatisch in die Datei rein, du musst sie von Hand entfernen und dich für eine Version (oder eine Mischung) entscheiden.
+
+git add test.txt (nach der Konflikt-Lösung)
+Genau wie vorhin – bereitet die reparierte Datei fürs Committen vor.
+
+git commit -m "Resolve merge conflict"
+Genau wie vorhin – speichert den gelösten Konflikt als neuen Commit, schließt den Merge-Vorgang endgültig ab.
+
+pwd
+
+pwd – "print working directory", zeigt den vollständigen Pfad deines aktuellen Ordners
+Zusammen: sagt dir genau, wo im Dateisystem du dich gerade befindest.

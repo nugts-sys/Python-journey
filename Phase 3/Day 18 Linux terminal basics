@@ -1,0 +1,9 @@
+pwd – wo bin ich gerade
+ls / ls -la – Ordnerinhalt anzeigen (kurz / ausführlich mit versteckten Dateien)
+cd .. / cd - / cd ~/pfad – verschiedene Wege zu navigieren
+cp – Datei kopieren
+mv – Datei verschieben/umbenennen
+rm – Datei löschen
+mkdir – Ordner erstellen
+rmdir – leeren Ordner löschen
+rm -r – Ordner mit Inhalt löschen (kennst du jetzt, auch wenn wir's nicht gebraucht haben)
