@@ -1,10 +1,8 @@
-<<<<<<< HEAD
+
 python3 -m venv myvenv – neue, isolierte Python-Umgebung erstellt
 source myvenv/bin/activate – Umgebung aktiviert, (myvenv) erscheint im Prompt
 pip install requests – Paket installiert, landet nur in dieser Umgebung
 pip list – zeigt alle installierten Pakete dieser Umgebung
 deactivate – Umgebung verlassen, zurück zur globalen Python-Installation
 Beweis: requests existiert außerhalb nicht
-=======
 on day 19 I just practiced linux commands in the terminal to navigate around
->>>>>>> 11ddecd2ca50830c54d647f30b45c00561e4aa63
